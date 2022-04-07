@@ -1,0 +1,111 @@
+main{
+  min-height: 100vh;
+  padding-top: 75px;
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+      text-align: center;
+      max-width: 70%;
+      font-family: "Playfair";
+      font-size: 71px;
+      font-weight: 700;
+      line-height: 71px;
+    }
+    p{
+      font-family: "Optima";
+      font-size: 21px;
+      text-align: center;
+    }
+    .utility{
+      font-family: "Optima";
+      font-size: 21px;
+      display: flex;
+      gap: 5px;
+      ul > li{
+        margin: 0;
+        padding: 0;
+      }
+    }
+    @media (max-width:768px) {
+      h1{
+        font-size: 32px;
+        line-height: 31px;
+        max-width: 90%;
+      }
+      p{
+        font-size: 18px;
+      }
+      .utility{
+        font-size: 18px;
+      }
+    }
+  }
+  .body{
+    .sub-title{
+      font-size: 24px;
+      font-family: "Playfair",serif;
+      margin: 20px 0;
+    }
+    .sub-sub-title{
+      font-size: 24px;
+      font-family: "Playfair",serif;
+      margin: 20px 0;
+    }
+    p{
+      font-family: "Optima",serif;
+      font-size: 21px;
+    }
+    figure{
+      font-family: "Optima";
+      font-size: 16px;
+      color: #979797;
+    }
+    .action{
+      display: flex;
+      align-items: center;
+      .social{
+        align-items: center;
+        display: flex;
+        .link-share{
+          text-decoration: none;
+          color: inherit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 30px;
+          border: 1px solid #000;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .related{
+    .nav{
+      border: none;
+      .nav-item{
+        .nav-link{
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          margin-right: 20px;
+          font-family: "Optima";
+          font-size: 24px;
+          color: #C4C4C4;
+          &.active{
+            border-bottom: 2px solid var(--color-red);
+            color: #000;
+          }
+        }
+      }
+    }
+    .content{
+      background-color:#E5E5E5;
+      padding: 50px 0;
+    }
+  }
+}

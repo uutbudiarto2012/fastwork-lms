@@ -1,0 +1,148 @@
+main {
+  min-height: 100vh;
+  padding-top: 75px;
+}
+
+main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .header h1 {
+  text-align: center;
+  max-width: 70%;
+  font-family: "Playfair";
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 71px;
+}
+
+main .header p {
+  font-family: "Optima";
+  font-size: 21px;
+  text-align: center;
+}
+
+main .header .utility {
+  font-family: "Optima";
+  font-size: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+main .header .utility ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  main .header h1 {
+    font-size: 32px;
+    line-height: 31px;
+    max-width: 90%;
+  }
+  main .header p {
+    font-size: 18px;
+  }
+  main .header .utility {
+    font-size: 18px;
+  }
+}
+
+main .body .sub-title {
+  font-size: 24px;
+  font-family: "Playfair",serif;
+  margin: 20px 0;
+}
+
+main .body .sub-sub-title {
+  font-size: 24px;
+  font-family: "Playfair",serif;
+  margin: 20px 0;
+}
+
+main .body p {
+  font-family: "Optima",serif;
+  font-size: 21px;
+}
+
+main .body figure {
+  font-family: "Optima";
+  font-size: 16px;
+  color: #979797;
+}
+
+main .body .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .body .action .social {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .body .action .social .link-share {
+  text-decoration: none;
+  color: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+main .related .nav {
+  border: none;
+}
+
+main .related .nav .nav-item .nav-link {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-right: 20px;
+  font-family: "Optima";
+  font-size: 24px;
+  color: #C4C4C4;
+}
+
+main .related .nav .nav-item .nav-link.active {
+  border-bottom: 2px solid var(--color-red);
+  color: #000;
+}
+
+main .related .content {
+  background-color: #E5E5E5;
+  padding: 50px 0;
+}
+/*# sourceMappingURL=detail.css.map */

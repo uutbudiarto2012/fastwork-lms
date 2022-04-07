@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#FFF" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../assets/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <title>LMS</title>
+  </head>
+  <body>
+    <!-- MENUS -->
+    <section class="fixed-top py-0">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+        <div class="container">
+          <a class="logo" href="/index.html">
+            <img src="../assets/images/logo.png" alt="">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Money</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Leisure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Home Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Tech</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Activities</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between py-4 py-lg-0">
+              <button class="btn-nav mx-2 search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn-nav mx-2 login">LOGIN</button>
+              <button class="btn-nav menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- DRAWER -->
+    <div class="offcanvas search-box offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header ms-auto">
+        <button type="button" class="close-box" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="search-wrapper">
+          <div class="input-wrapper">
+            <input class="input" type="text" placeholder="What Are you looking For?">
+          </div>
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Other Menu Here</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        MENU
+      </div>
+    </div>
+    <!-- DRAWER -->
+    <!-- MENUS -->
+    <main>
+      <article>
+        <div class="container">
+          <div class="header my-5">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </h1>
+            <p>BY JOHN DOE, FIRST PUBLISHED IN TODAY, 20 AUG 2019</p>
+            <div class="utility">
+              <ul>
+                <li>9 min read</li>
+              </ul>
+              <i class="bi bi-bookmark"></i>
+            </div>
+          </div>
+          <div class="body">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <img src="../assets/images/hero-detail.png" alt="hero-detail" class="img-fluid">
+              </div>
+              <div class="col-lg-10">
+                <h2 class="sub-title">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                </h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                </p>
+                <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                </p>
+                <div class="video-container">
+                  <div class="ratio ratio-21x9">
+                    <iframe src="https://www.youtube.com/embed/z11YOG_EFkM" title="YouTube video"></iframe>
+                  </div>
+                </div>
+                <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+                </p>
+                <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                </p>
+                <p>
+                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                </p>
+                <figure class="figure">
+                  <img src="../assets/images/detail-1.png" class="figure-img img-fluid rounded" alt="...">
+                  <figcaption class="figure-caption text-center">A barge carrying ash from incineration plants bound for Pulau Semakau, where the ash will be offloaded and sent to the landfill. Photo: Raj Nadarajan/TODAY</figcaption>
+                </figure>
+                <h3 class="sub-sub-title">Dolor SIt Amet</h3>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </p>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+                </p>
+                <p>
+                  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                </p>
+                <p>
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <p class="text-danger">But I must explain to you how all this mistaken idea</p>
+                <div class="action pb-4">
+                  <span class="fw-bold me-3 d-block">Share to :</span>
+                  <div class="social">
+                    <a href="#" class="link-share">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="link-share">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="link-share">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="related">
+        <div class="container">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Next</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">You May Also Like</button>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="container">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane sectionSwiper fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/1.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Food</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/2.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Shop</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        Christmas gift ideas 2021: good gift ideas for people who love doing good
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/3.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Money</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        Here are the top 3 scams in S’pore & how you  can avoid being duped by them
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/3.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Food</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane sectionSwiper fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/3.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Food</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/2.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Shop</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        Christmas gift ideas 2021: good gift ideas for people who love doing good
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="catalog">
+                      <div class="img-container">
+                        <img
+                          src="../assets/images/lastest/1.png"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="info">
+                        <span class="category">Food</span>
+                        <div class="read-info">
+                          <ul class="read ms-auto">
+                            <li>
+                              3 min read
+                              <span><i class="bi bi-bookmark"></i></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <p class="text">
+                        10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mb-3 col-lg-2">
+              <div class="logo-container">
+                <img src="../assets/images/logo-footer.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="content">
+                <h2 class="title">Lorem Ipsum</h2>
+                <h3 class="sub-title">Kenapa Lorem Ipsum, Dolor Sit Amet?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <div class="support mb-3">
+                <div class="logo-support-wrapper">
+                  <div class="img-container">
+                    <img src="../assets/images/logo-support.svg" alt="">
+                  </div>
+                  <div class="img-container">
+                    <img src="../assets/images/logo-support.svg" alt="">
+                  </div>
+                </div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 d-flex justify-content-center">
+              <a href="https://facebook.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_facebook.svg" alt="facebook">
+              </a>
+              <a href="https://instagram.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_instagram.svg" alt="instagram">
+              </a>
+              <a href="https://youtube.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_youtube.svg" alt="youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3 col-12">
+              <span>Copyright © 2021 Company Name Ltd</span>
+            </div>
+            <div class="col-md-3 col-12 text-lg-end">
+              <a href="#"> Terms & Conditions Privacy Policy </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <iframe width="956" height="538" src="https://www.youtube.com/embed/f-JcausQea8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const sectionSwiper = new Swiper(".sectionSwiper", {
+        slidesPerView: "auto",
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
