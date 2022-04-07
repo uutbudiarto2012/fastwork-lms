@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#FFF" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../../assets/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <title>LMS</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+  <section class="fixed-top py-0">
+    <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="../../assets/images/logo.png" alt="">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Money</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Leisure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Home Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Tech</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Activities</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-between py-4 py-lg-0">
+            <button class="btn-nav mx-2 search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+              <i class="bi bi-search"></i>
+            </button>
+            <button class="btn-nav mx-2 login">LOGIN</button>
+            <button class="btn-nav menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- DRAWER -->
+  <div class="offcanvas search-box offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header ms-auto">
+      <button type="button" class="close-box" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="search-wrapper">
+        <div class="input-wrapper">
+          <input class="input" type="text" placeholder="What Are you looking For?">
+        </div>
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Other Menu Here</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+  <!-- DRAWER -->
+  <!-- NAVBAR -->
+
+    <!-- HERO -->
+    <section class="hero top-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <img
+                src="../../assets/images/hero/main.png"
+                alt=""
+                class="img-fluid"
+              />
+              <div class="link-main-hero">
+                <div class="utility">
+                  <span class="category">Sustainability</span>
+                  <ul class="read">
+                    <li>9 min read</li>
+                    <i class="bi bi-bookmark"></i>
+                  </ul>
+                </div>
+                <a href="#">
+                  <p>
+                    No time to waste in dealing with Singapore’s mounting trash problem 
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right catalog-mobile">
+              <div class="row">
+                <div class="col-6">
+                  <a href="#" class="catalog">
+                    <div class="img-container">
+                      <img
+                        src="../../assets/images/hero/1.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="info">
+                      <span class="category">Home Tips</span>
+                      <div class="read-info">
+                        <ul class="read ms-auto">
+                          <li>
+                            3 min read
+                            <span><i class="bi bi-bookmark"></i></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="text">
+                      Ingin Mendaur Ulang Benda Usang? Ini 4 Caranya Yang
+                      Super-Gampang!
+                    </p>
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#" class="catalog">
+                    <div class="img-container">
+                      <img
+                        src="../../assets/images/hero/2.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="info">
+                      <span class="category">Money</span>
+                      <div class="read-info">
+                        <ul class="read ms-auto">
+                          <li>
+                            3 min read
+                            <span><i class="bi bi-bookmark"></i></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="text">
+                      3 Cara Mudah Membuat Kebiasaan Baru Yang Berfaedah
+                    </p>
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#" class="catalog">
+                    <div class="img-container">
+                      <img
+                        src="../../assets/images/hero/3.png"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="info">
+                      <span class="category">Money</span>
+                      <div class="read-info">
+                        <ul class="read ms-auto">
+                          <li>
+                            3 min read
+                            <span><i class="bi bi-bookmark"></i></span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p class="text">
+                      Mengenal ‘Workplace Communication’ dan Cara Menerapkannya
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HERO -->
+
+    <div class="divider" />
+
+    <section class="lastest">
+      <div class="container bg-darken">
+        <h2 class="section-header">Lastest</h2>
+        <div class="sectionSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/lastest/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/lastest/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Shop</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Christmas gift ideas 2021: good gift ideas for people who love doing good
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/lastest/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Here are the top 3 scams in S’pore & how you  can avoid being duped by them
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/lastest/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  10 Strategi Memulai Wirausaha Agar Sukses dan Banjir Cuan
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="sportligt light">
+      <div class="container">
+        <h2 class="section-header">Spotlight</h2>
+        <div class="main mb-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="../../assets/images/spotlight/main.png"
+                alt="spotlight"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="utils">
+                <span class="category">Spark</span>
+                <ul>
+                  <li>14M 33S</li>
+                </ul>
+              </div>
+              <h3 class="title">S2: Sed do eiusmod tempor incididunt ut</h3>
+              <div class="excerpt">
+                <p>
+                  When the demands of work and caring for an ageing parent fuel
+                  inner turmoil and anxiety...
+                </p>
+              </div>
+              <a href="#" class="btn btn-more">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="sectionSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Work</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"  class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  WFH Bikin Gampang Stres, Coba Redakan Dengan Ini
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"  class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Harus Mengambil Keputusan Saat Pandemi? Simak Tips dari
+                  Fellexandro Ruby
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"  class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Work</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"  class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  WFH Bikin Gampang Stres, Coba Redakan Dengan Ini
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"  class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/spotlight/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="text">
+                  Harus Mengambil Keputusan Saat Pandemi? Simak Tips dari
+                  Fellexandro Ruby
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="product">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="section-header">Product</h2>
+          <a href="#" class="btn btn-more">MORE</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-4 col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/spotlight/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Work</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending bg-red">
+      <div class="container">
+        <h2 class="section-header">Trending</h2>
+        <div class="row">
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <a href="#" class="catalog">
+              <div class="info">
+                <span class="category">Live Smarter</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <a href="#" class="catalog">
+              <div class="info">
+                <span class="category">Live Smarter</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <a href="#" class="catalog">
+              <div class="info">
+                <span class="category">Live Smarter</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 mb-4 mb-lg-0">
+            <a href="#" class="catalog">
+              <div class="info">
+                <span class="category">Live Smarter</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      3 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="food">
+      <div class="container">
+        <h2 class="section-header">Food</h2>
+        <div class="main mb-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="../../assets/images/food/main.png"
+                alt="Sustainability"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="utils">
+                <span class="category">Sustainability</span>
+                <ul>
+                  <li>14M 33S</li>
+                </ul>
+              </div>
+              <h3 class="title">
+                Jangan Dibuang! Contek 8 Resep Lezat Dari Batang Brokoli
+              </h3>
+              <div class="excerpt">
+                <p>
+                  Saat membeli brokoli, otomatis bagian batang masuk dalam
+                  hitungan beratnya. Tapi ketika mulai memasak di dapur, bagian
+                  batangnya seringkali dipotong untuk ditaruh di tempat sampah.
+                </p>
+              </div>
+              <a href="#" class="btn btn-more">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="sectionSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  s it okay to over-stock our fridges so our families always have
+                  plenty to eat?
+                </h3>
+                <p class="text">
+                  Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  Good hosts always order more than enough. Agree?
+                </h3>
+                <p class="text">
+                  WFH Bikin Gampang Stres, Coba Redakan Dengan Ini
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food Waste</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  How food is lost and saved from farm to market
+                </h3>
+                <p class="text">
+                  There is a need to rethink existing farming and food systems to
+                  tackle the problem of food loss
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="money light">
+      <div class="container">
+        <h2 class="section-header">Money</h2>
+        <div class="row">
+          <div class="col-lg-5">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/money/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Sustainability</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      8 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Mengubah Sampah Makanan Menjadi Cairan Pembersih Natural
+              </p>
+            </a>
+          </div>
+          <div class="col col-lg">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/money/2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Money</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      8 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                7 Wirausaha Sosial Perempuan Indonesia Paling Inspiratif
+              </p>
+            </a>
+          </div>
+          <div class="col col-lg">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/money/3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Money</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      8 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                Jangan Dibuang! Biji Alpukat Berkhasiat Buat Sehat Loh
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/money/4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Money</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      8 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">The step-by-step guide to growing your money</p>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="catalog">
+              <div class="img-container">
+                <img
+                  src="../../assets/images/money/5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <span class="category">Money</span>
+                <div class="read-info">
+                  <ul class="read ms-auto">
+                    <li>
+                      8 min read
+                      <span><i class="bi bi-bookmark"></i></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text">
+                How much will you need to hold a wedding in Bali?
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="work">
+      <div class="container">
+        <h2 class="section-header">Work</h2>
+        <div class="main mb-5">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img
+                src="../../assets/images/food/main.png"
+                alt="Sustainability"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="utils">
+                <span class="category">Sustainability</span>
+                <ul>
+                  <li>14M 33S</li>
+                </ul>
+              </div>
+              <h3 class="title">
+                Jangan Dibuang! Contek 8 Resep Lezat Dari Batang Brokoli
+              </h3>
+              <div class="excerpt">
+                <p>
+                  Saat membeli brokoli, otomatis bagian batang masuk dalam
+                  hitungan beratnya. Tapi ketika mulai memasak di dapur, bagian
+                  batangnya seringkali dipotong untuk ditaruh di tempat sampah.
+                </p>
+              </div>
+              <a href="#" class="btn btn-more">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="sectionSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  s it okay to over-stock our fridges so our families always have
+                  plenty to eat?
+                </h3>
+                <p class="text">
+                  Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Money</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  Good hosts always order more than enough. Agree?
+                </h3>
+                <p class="text">
+                  WFH Bikin Gampang Stres, Coba Redakan Dengan Ini
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food Waste</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  How food is lost and saved from farm to market
+                </h3>
+                <p class="text">
+                  There is a need to rethink existing farming and food systems to
+                  tackle the problem of food loss
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="catalog">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/food/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="info">
+                  <span class="category">Food</span>
+                  <div class="read-info">
+                    <ul class="read ms-auto">
+                      <li>
+                        3 min read
+                        <span><i class="bi bi-bookmark"></i></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h3 class="title">
+                  s it okay to over-stock our fridges so our families always have
+                  plenty to eat?
+                </h3>
+                <p class="text">
+                  Auto-Jago, Ini 7 Cara Menjadi Fotografer Human Interest
+                </p>
+                <a href="#" class="btn btn-more mt-3">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" />
+
+    <section class="dbs-spark bg-darken">
+      <div class="container">
+        <h2 class="section-header">DBS SPARK</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="main-lightbox">
+              <img src="../../assets/images/dbs-spark/main.png" alt="" class="">
+              <div class="row align-items-center content">
+                <div class="col-lg-6 main">
+                  <div class="px-lg-3">
+                    <div class="utils">
+                      <span class="category text-white">Spark</span>
+                      <ul>
+                        <li>14M 33s</li>
+                      </ul>
+                    </div>
+                    <h3 class="title text-white">S2: Sed do eiusmod tempor incididunt ut</h3>
+                    <div class="excerpt">
+                      <p class="optima">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="right">
+                    <a href="https://youtu.be/q5PAwtkqpL0" class="play-button glightbox">
+                      <i class="bi bi-play-fill text-white"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider main container -->
+      </div>
+      <div class="swaiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="spark-item">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/dbs-spark/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="btn-wrapper">
+                    <a href="https://youtu.be/PowZ3kATlfw" class="glightbox">
+                      <i class="bi bi-play-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="category">Ipsum</span>
+                  <ul class="read ms-auto">
+                    <li>3 min read</li>
+                  </ul>
+                </div>
+                <span class="excerpt text-white">S2: Sed do eiusmod tempor</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="spark-item">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/dbs-spark/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="btn-wrapper">
+                    <a href="https://youtu.be/PowZ3kATlfw" class="glightbox">
+                      <i class="bi bi-play-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="category">Ipsum</span>
+                  <ul class="read ms-auto">
+                    <li>3 min read</li>
+                  </ul>
+                </div>
+                <span class="excerpt text-white">S2: Sed do eiusmod tempor</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="spark-item">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/dbs-spark/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="btn-wrapper">
+                    <a href="https://youtu.be/PowZ3kATlfw" class="glightbox">
+                      <i class="bi bi-play-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="category">Ipsum</span>
+                  <ul class="read ms-auto">
+                    <li>3 min read</li>
+                  </ul>
+                </div>
+                <span class="excerpt text-white">S2: Sed do eiusmod tempor</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="spark-item">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/dbs-spark/4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="btn-wrapper">
+                    <a class="glightbox" href="https://youtu.be/PowZ3kATlfw">
+                      <i class="bi bi-play-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="category">Ipsum</span>
+                  <ul class="read ms-auto">
+                    <li>3 min read</li>
+                  </ul>
+                </div>
+                <span class="excerpt text-white">S2: Sed do eiusmod tempor</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="spark-item">
+                <div class="img-container">
+                  <img
+                    src="../../assets/images/dbs-spark/5.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="btn-wrapper">
+                    <a class="glightbox" href="https://youtu.be/PowZ3kATlfw">
+                      <i class="bi bi-play-fill"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="info">
+                  <span class="category">Ipsum</span>
+                  <ul class="read ms-auto">
+                    <li>3 min read</li>
+                  </ul>
+                </div>
+                <span class="excerpt text-white">S2: Sed do eiusmod tempor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mb-3 col-lg-2">
+              <div class="logo-container">
+                <img src="../../assets/images/logo-footer.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="content">
+                <h2 class="title">Lorem Ipsum</h2>
+                <h3 class="sub-title">Kenapa Lorem Ipsum, Dolor Sit Amet?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <div class="support mb-3">
+                <div class="logo-support-wrapper">
+                  <div class="img-container">
+                    <img src="../../assets/images/logo-support.svg" alt="">
+                  </div>
+                  <div class="img-container">
+                    <img src="../../assets/images/logo-support.svg" alt="">
+                  </div>
+                </div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 d-flex justify-content-center">
+              <a href="https://facebook.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../../assets/images/ic_facebook.svg" alt="facebook">
+              </a>
+              <a href="https://instagram.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../../assets/images/ic_instagram.svg" alt="instagram">
+              </a>
+              <a href="https://youtube.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../../assets/images/ic_youtube.svg" alt="youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3 col-12">
+              <span>Copyright © 2021 Company Name Ltd</span>
+            </div>
+            <div class="col-md-3 col-12 text-lg-end">
+              <a href="#"> Terms & Conditions Privacy Policy </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const sectionSwiper = new Swiper(".sectionSwiper", {
+        slidesPerView: "auto",
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
