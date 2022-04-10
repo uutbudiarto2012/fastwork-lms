@@ -228,6 +228,19 @@ ul.navbar-nav .nav-item .nav-link {
   ul.navbar-nav .nav-item .nav-link {
     height: 35px;
   }
+  ul.navbar-nav .nav-item .nav-link.active {
+    color: var(--color-red);
+  }
+  ul.navbar-nav .nav-item .nav-link.active::before {
+    content: "";
+    position: absolute;
+    display: none;
+    height: 3px;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--color-red);
+  }
 }
 
 ul.navbar-nav .nav-item .nav-link:hover {
