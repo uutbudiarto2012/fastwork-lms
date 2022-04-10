@@ -161,21 +161,7 @@ main {
   padding: 50px 0;
 }
 
-.table.custom th {
-  background-color: #424242;
-  color: #FFF;
-  padding: 15px;
-}
-
-.table.custom th, .table.custom tr {
-  font-family: "Optima",serif;
-}
-
-.table.custom tr {
-  border-top: 0.3px solid rgba(0, 0, 0, 0.2);
-}
-
-.table.custom .register-now {
+.register-now {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,6 +178,27 @@ main {
   border: #000 1px solid;
   background-color: var(--color-red);
   text-align: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.register-now:hover {
+  color: #FFF;
+}
+
+.table.custom th {
+  background-color: #424242;
+  color: #FFF;
+  padding: 15px;
+}
+
+.table.custom th, .table.custom tr {
+  font-family: "Optima",serif;
+}
+
+.table.custom tr {
+  border-top: 0.3px solid rgba(0, 0, 0, 0.2);
 }
 
 .table.custom .fac {

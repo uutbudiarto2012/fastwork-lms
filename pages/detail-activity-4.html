@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#FFF" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="../assets/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <title>LMS</title>
+  </head>
+  <body>
+    <!-- MENUS -->
+    <section class="fixed-top py-0">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white py-0">
+        <div class="container">
+          <a class="logo" href="/index.html">
+            <img src="../assets/images/logo.png" alt="">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Money</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Leisure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Home Tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Community</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Tech</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active">Activities</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-between py-4 py-lg-0">
+              <button class="btn-nav mx-2 search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn-nav mx-2 login">LOGIN</button>
+              <button class="btn-nav menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- DRAWER -->
+    <div class="offcanvas search-box offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header ms-auto">
+        <button type="button" class="close-box" data-bs-dismiss="offcanvas" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="search-wrapper">
+          <div class="input-wrapper">
+            <input class="input" type="text" placeholder="What Are you looking For?">
+          </div>
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Other Menu Here</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        MENU
+      </div>
+    </div>
+    <!-- DRAWER -->
+    <!-- MENUS -->
+    <main>
+      <article>
+        <div class="container">
+          <div class="header my-5">
+            <h1>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h1>
+            <p>BY JOHN DOE, FIRST PUBLISHED IN TODAY, 20 AUG 2019</p>
+            <div class="utility">
+              <ul>
+                <li> <span id="time"></span> min read</li>
+              </ul>
+              <i class="bi bi-bookmark"></i>
+            </div>
+          </div>
+          <div class="body">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <img src="../assets/images/activities/main-4.png" alt="hero-detail" class="img-fluid">
+              </div>
+              <div class="col-lg-10 lists">
+                <h3 class="title-list my-4">Sed ut perspiciatis unde omnis iste natus error</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                </p>
+                <a href="#register" class="register-now mb-4">DAFTAR GRATIS</a>
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <img src="../assets/images/activities/4-1.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-6 mb-3">
+                    <img src="../assets/images/activities/4-2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-6 mb-3">
+                    <img src="../assets/images/activities/4-3.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-6 mb-3">
+                    <img src="../assets/images/activities/4-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <section id="register">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="form-register-3">
+              <img src="../assets/images/activities/title-reg-3.png" alt="title-regiter-3" class="title-regiter-3 w-25">
+              <form id="form-register" class="needs-validation" method="post">
+                <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="mb-1">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        Nama
+                        <span class="text-danger">*</span>
+                      </label>
+                      <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Kamu" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-1">
+                      <label for="exampleFormControlInput1" class="form-label">HP <span class="text-danger">*</span></label>
+                      <input type="phone" class="form-control" id="hp" placeholder="Masukan Nomor Handphone Kamu">
+                    </div>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-lg-6">
+                    <div class="mb-1">
+                      <label for="exampleFormControlInput1" class="form-label">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="Masukan Email Kamu">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-1">
+                      <label for="exampleFormControlInput1" class="form-label">Instagram</label>
+                      <input type="text" class="form-control" id="instagram" placeholder="Masukan Instagram Kamu">
+                    </div>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col-12">
+                    <label for="" class="form-label mr-2">Gender : </label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Female</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label text-sm" for="flexCheckChecked">
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                      <label class="form-check-label text-sm" for="flexCheckChecked1">
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                      <label class="form-check-label text-sm" for="flexCheckChecked2">
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                      <label class="form-check-label text-sm" for="flexCheckChecked3">
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 m-3 text-start">
+                    <button type="submit">SUBMIT</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 mb-3 col-lg-2">
+              <div class="logo-container">
+                <img src="../assets/images/logo-footer.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="content">
+                <h2 class="title">Lorem Ipsum</h2>
+                <h3 class="sub-title">Kenapa Lorem Ipsum, Dolor Sit Amet?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+              <div class="support mb-3">
+                <div class="logo-support-wrapper">
+                  <div class="img-container">
+                    <img src="../assets/images/logo-support.svg" alt="">
+                  </div>
+                  <div class="img-container">
+                    <img src="../assets/images/logo-support.svg" alt="">
+                  </div>
+                </div>
+                <span>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-3 mt-3 d-flex justify-content-center">
+              <a href="https://facebook.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_facebook.svg" alt="facebook">
+              </a>
+              <a href="https://instagram.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_instagram.svg" alt="instagram">
+              </a>
+              <a href="https://youtube.com" class="btn-social" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/images/ic_youtube.svg" alt="youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-3 col-12">
+              <span>Copyright © 2021 Company Name Ltd</span>
+            </div>
+            <div class="col-md-3 col-12 text-lg-end">
+              <a href="#"> Terms & Conditions Privacy Policy </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <iframe width="956" height="538" src="https://www.youtube.com/embed/f-JcausQea8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const sectionSwiper = new Swiper(".sectionSwiper", {
+        slidesPerView: "auto",
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
+      
+    </script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

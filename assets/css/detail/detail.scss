@@ -122,7 +122,22 @@ main{
   }
 }
 
-
+.register-now{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFF;
+  border: #000 1px solid;
+  background-color: var(--color-red);
+  text-align: center;
+  max-width: max-content;
+  &:hover{
+    color: #FFF;
+  }
+}
 .table.custom{
   th{
     background-color: #424242;
@@ -135,18 +150,7 @@ main{
   tr{
     border-top: 0.3px solid rgba(0, 0, 0, 0.2);
   }
-  .register-now{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 600;
-    color: #FFF;
-    border: #000 1px solid;
-    background-color: var(--color-red);
-    text-align: center;
-  }
+  
   .fac{
     display: flex;
     img.thumbnail{
