@@ -50,7 +50,7 @@ section {
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
-      color: #fff;
+      color: #fff;;
       &::after {
         content: "";
         display: block;
@@ -78,6 +78,7 @@ section {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 30px;
     &::after {
       content: "";
       display: block;
@@ -97,7 +98,7 @@ section {
   font-family: "PlayfairDisplay", serif;
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: inherit;
   &:hover {
@@ -121,7 +122,7 @@ section {
     align-items: center;
     margin: 5px 0;
     .category {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 700;
       font-family: "Optima", serif;
       display: flex;
@@ -135,7 +136,7 @@ section {
       }
       display: flex;
       flex: 1;
-      font-size: 21px;
+      font-size: 16px;
       font-weight: 400;
       .read {
         display: flex;
@@ -143,10 +144,15 @@ section {
       }
     }
   }
+  .title{
+    font-size: 24px;
+    font-weight: 400;
+  }
   .text {
-    font-size: 21px;
+    font-size: 18px;
     margin: 0;
-    line-height: 21px;
+    line-height: 18px;
+    font-family: "Optima", serif;
   }
 }
 // CATALOG (CUSTOM CARD)
@@ -158,13 +164,25 @@ section {
     width: 100px;
   }
 }
+
+.navbar{
+  position: relative;
+  .scroll-bar-indicator{
+    height: 4px;
+    width: 0;
+    background-color: #ed1c24;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
 ul.navbar-nav {
   .nav-item {
     margin: 0 5px;
     .nav-link {
       font-family: "Optima";
       font-weight: 700;
-      font-size: 18px;
+      font-size: 16px;
       color: var(--color-dark);
       text-transform: uppercase;
       cursor: pointer;

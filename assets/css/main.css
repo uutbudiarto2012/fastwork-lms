@@ -89,6 +89,7 @@ section .section-header {
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 section .section-header::after {
@@ -112,7 +113,7 @@ section.light {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: inherit;
 }
@@ -150,7 +151,7 @@ section.light {
 }
 
 .catalog .info .category {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Optima", serif;
   display: -webkit-box;
@@ -171,7 +172,7 @@ section.light {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -189,10 +190,16 @@ section.light {
           align-items: center;
 }
 
+.catalog .title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .catalog .text {
-  font-size: 21px;
+  font-size: 18px;
   margin: 0;
-  line-height: 21px;
+  line-height: 18px;
+  font-family: "Optima", serif;
 }
 
 .logo {
@@ -203,6 +210,18 @@ section.light {
   width: 100px;
 }
 
+.navbar {
+  position: relative;
+}
+
+.navbar .scroll-bar-indicator {
+  height: 4px;
+  width: 0;
+  background-color: #ed1c24;
+  position: absolute;
+  bottom: 0;
+}
+
 ul.navbar-nav .nav-item {
   margin: 0 5px;
 }
@@ -210,7 +229,7 @@ ul.navbar-nav .nav-item {
 ul.navbar-nav .nav-item .nav-link {
   font-family: "Optima";
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--color-dark);
   text-transform: uppercase;
   cursor: pointer;
