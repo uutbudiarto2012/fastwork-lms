@@ -156,13 +156,21 @@ section {
   }
 }
 // CATALOG (CUSTOM CARD)
-
+.main-header{
+  font-size: 12px;
+}
 // NAVBAR
 .logo {
   padding: 5px 0;
+  text-decoration: none;
+  font-family: "Playfair", serif;
   img {
     width: 100px;
   }
+  // h1{
+  //   font-weight: 700;
+  //   color: #000;
+  // }
 }
 
 .navbar{

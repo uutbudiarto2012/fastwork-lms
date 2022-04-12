@@ -202,8 +202,14 @@ section.light {
   font-family: "Optima", serif;
 }
 
+.main-header {
+  font-size: 12px;
+}
+
 .logo {
   padding: 5px 0;
+  text-decoration: none;
+  font-family: "Playfair", serif;
 }
 
 .logo img {

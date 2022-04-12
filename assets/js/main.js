@@ -35,3 +35,13 @@ function scrollProgress() {
   scrollIndicator.style.width = Math.round(percentScrolled) + "%";
 }
 document.addEventListener("scroll", scrollProgress);
+
+
+// PAGE ACTIVITY 4
+const registerSection = document.querySelector('#register')
+const btnRegisterNow = document.querySelector('#btnRegisterNow')
+btnRegisterNow.addEventListener("click",function(){
+  registerSection.classList.remove('d-none')
+  window.scrollTo(0,registerSection.offsetTop - 90);
+})
+
